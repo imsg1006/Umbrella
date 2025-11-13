@@ -217,8 +217,7 @@ body.theme-yellow {
     height: 24px;
     fill: white;
 }
-
-/* Hidden file input */
+ 
 .file-input {
     display: none;
 }
