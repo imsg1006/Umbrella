@@ -1,56 +1,60 @@
-☂️ Umbrella Customizer
+☂️ Custom Umbrella Customizer
 
-The Umbrella Customizer is an interactive web tool built for an umbrella seller who caters to corporate brands. It allows customers to instantly preview their company logos on different colored umbrellas before placing an order.
-
-The project enables users to:
-
-Upload their brand logo
-
-Preview it on the umbrella (positioned at the bottom area)
-
-Switch between umbrella colors (Pink, Blue, Yellow)
-
-Experience a dynamic theme change across the UI based on the selected color
+A simple yet interactive umbrella customization tool built with HTML, CSS, and JavaScript.
+This project allows corporate clients to preview their logos on umbrellas instantly in different colors — Pink, Blue, and Yellow.
 
 🚀 Features
+🎨 Color Customization
 
-✅ Logo Upload & Preview – Upload your company logo and see it instantly applied to the umbrella.
-✅ Dynamic Color Swatch – Choose from Pink, Blue, and Yellow umbrellas. The umbrella image and overall tool theme change accordingly.
-✅ Real-time Customization – No page reloads; all interactions are handled smoothly with JavaScript.
-✅ Simple & Lightweight – Built using only HTML, CSS, and Vanilla JavaScript — no frameworks or external libraries.
-✅ Responsive Design – Optimized for both desktop and mobile users.
+Choose between Pink, Blue, and Yellow umbrellas.
 
-🧰 Technologies Used
+The entire theme of the page dynamically updates to match the selected color for a consistent look.
 
-HTML5 – Structure and markup
+🖼️ Logo Upload
 
-CSS3 – Styling and color themes
+Upload your brand’s .png or .jpg logo for an instant on-umbrella preview.
 
-JavaScript (Vanilla) – DOM manipulation, image handling, and interactivity
+Automatically positions the logo at the bottom center of the umbrella.
 
-🎨 Color Options
+Supports file sizes up to 5MB.
 
-The umbrella comes in three available colors:
+📸 Download Preview (New)
 
-🌸 Pink
+Instantly download the customized umbrella preview as an image file.
 
-💙 Blue
+Ideal for sharing with teams or clients before placing bulk orders.
 
-💛 Yellow
+✨ Smooth Umbrella Animation (New)
 
-Selecting a color updates both the umbrella image and the UI theme to match the chosen color palette.
+When the umbrella loads or its color changes, a subtle fade and scale animation brings it to life.
 
-🧑‍💻 How It Works
+Creates a modern, fluid experience while switching between colors.
 
-Open the Umbrella Customizer webpage.
+🌗 Shadow & Depth Effects (New)
 
-Choose a color from the color swatches.
+Added realistic shadow effects for the umbrella and UI components.
 
-Upload your logo (PNG/JPEG recommended).
+Enhances depth perception and gives the tool a clean, premium look.
 
-Instantly preview the logo placed on the umbrella.
+🧠 Tech Stack
 
-Adjust or switch colors to visualize different options.
+HTML5 – structure and markup
+
+CSS3 – layout, color themes, and animation
+
+JavaScript (Vanilla) – logic for color switching, logo upload, and download
+
+No libraries or frameworks were used — everything is built from scratch for maximum performance and simplicity.
+
+⚙️ How It Works
+
+Select a color from the color swatches.
+
+Upload your logo using the “Upload Logo” button.
+
+Instantly preview your logo placed on the umbrella.
+
+Click “Download Preview” to save your customized design.
 
 📂 Project Structure
 umbrella-customizer/
@@ -70,7 +74,7 @@ To run the project locally:
 
 Clone or download the repository:
 
-git clone https://github.com/your-username/umbrella-customizer.git
+git clone https://github.com/imsg1006/Umbrella
 
 
 Open the project folder:
@@ -93,5 +97,28 @@ No frameworks or libraries (React, jQuery, etc.) were used.
 The code follows semantic HTML, modular CSS, and clean JavaScript practices.
 
 Designed for easy scalability, allowing more colors or branding features to be added in the future.
+
+💡 Future Enhancements
+
+Allow users to drag and resize the logo on the umbrella
+
+Add 4–5 more color options for variety
+
+Provide 360° rotation or 3D preview
+
+Add undo/reset functionality
+
+🏁 Conclusion
+
+This project demonstrates clean UI design, interactive JavaScript logic, and efficient image manipulation — all without external libraries.
+It’s an elegant solution for showcasing real-time product customization directly in the browser.
+
+ Screenshots
+<img width="1920" height="1080" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/af2dcc56-f6fb-4ff3-a313-8eb3c0cce7a3" />
+<img width="1920" height="1080" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/7e1dc201-8037-4772-989b-5a0429d8686f" />
+<img width="1920" height="1080" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/7f26b6a4-2d48-44eb-b7fc-ed46fd15ad72" />
+<img width="1920" height="1080" alt="Screenshot (9)" src="https://github.com/user-attachments/assets/07eda565-490e-4115-963a-534384da8565" />
+
+
 
  
