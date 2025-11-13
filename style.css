@@ -12,8 +12,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-/* Theme colors */
+ 
 body.theme-pink {
   background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
 }
@@ -35,7 +34,7 @@ body.theme-yellow {
   padding: 40px;
 }
 
-/* Umbrella section */
+ 
 .umbrella-section {
   flex: 1;
   display: flex;
@@ -65,7 +64,7 @@ body.theme-yellow {
   display: none;
 }
 
-/* Logo overlay */
+ 
 .logo-overlay {
   position: absolute;
   bottom: 22%;
@@ -88,7 +87,7 @@ body.theme-yellow {
   display: block;
 }
 
-/* Customization panel */
+ 
 .customization-panel {
   flex: 1;
   max-width: 500px;
@@ -102,7 +101,7 @@ body.theme-yellow {
   line-height: 1.2;
 }
 
-/* Color swatches */
+ 
 .color-swatches {
   display: flex;
   gap: 15px;
@@ -134,7 +133,7 @@ body.theme-yellow {
 .color-swatch.blue { background-color: #03a9f4; }
 .color-swatch.yellow { background-color: #fdd835; }
 
-/* Upload section */
+ 
 .upload-section {
   margin-top: 40px;
 }
@@ -205,7 +204,7 @@ body.theme-yellow {
 
 .file-input { display: none; }
 
-/* Logo preview box */
+ 
 .logo-preview-section {
   margin-top: 25px;
   text-align: center;
@@ -244,7 +243,7 @@ body.theme-yellow {
   background-color: #d32f2f;
 }
 
-/* Animations */
+ 
 .fade-in {
   animation: fadeIn 0.5s ease;
 }

@@ -12,9 +12,7 @@ const body = document.body;
 let currentColor = 'blue';
 let uploadedLogo = null;
 
-/**
- * Change umbrella color + theme
- */
+ 
 function changeUmbrellaColor(color) {
   currentColor = color;
 
@@ -31,9 +29,7 @@ function changeUmbrellaColor(color) {
   body.className = `theme-${color}`;
 }
 
-/**
- * Validate uploaded file
- */
+ 
 function validateFile(file) {
   if (!file) return { isValid: false, error: 'No file selected.' };
   const validTypes = ['image/png', 'image/jpeg', 'image/jpg'];
@@ -42,9 +38,7 @@ function validateFile(file) {
   return { isValid: true };
 }
 
-/**
- * Handle logo upload
- */
+ 
 function handleLogoUpload(event) {
   const file = event.target.files[0];
   const validation = validateFile(file);
@@ -62,9 +56,7 @@ function handleLogoUpload(event) {
   reader.readAsDataURL(file);
 }
 
-/**
- * Display uploaded logo
- */
+ 
 function displayLogo(logoDataUrl) {
   overlayLogoImage.src = logoDataUrl;
   logoOverlay.classList.add('visible');
@@ -72,9 +64,7 @@ function displayLogo(logoDataUrl) {
   logoPreviewBox.classList.add('visible');
 }
 
-/**
- * Remove uploaded logo
- */
+ 
 function removeLogo() {
   uploadedLogo = null;
   fileInput.value = '';
@@ -84,9 +74,7 @@ function removeLogo() {
   logoPreviewImage.src = '';
 }
 
-/**
- * Download umbrella preview
- */
+ 
 function downloadPreview() {
   const umbrellaPreview = document.querySelector('.umbrella-preview');
   html2canvas(umbrellaPreview).then((canvas) => {
@@ -96,25 +84,20 @@ function downloadPreview() {
     link.click();
   });
 }
-
-/**
- * Umbrella open animation on load
- */
+ 
 function animateUmbrellaOpening() {
   const selectedUmbrella = document.getElementById(`umbrella-${currentColor}`);
   selectedUmbrella.classList.add('umbrella-open');
   setTimeout(() => selectedUmbrella.classList.remove('umbrella-open'), 1500);
 }
 
-/**
- * Initialize app
- */
+ 
 function initializeApp() {
   changeUmbrellaColor('blue');
   animateUmbrellaOpening();
 }
 
-// Event listeners
+ 
 colorSwatches.forEach(swatch => {
   swatch.addEventListener('click', () => changeUmbrellaColor(swatch.dataset.color));
 });
@@ -122,7 +105,7 @@ uploadButton.addEventListener('click', () => fileInput.click());
 fileInput.addEventListener('change', handleLogoUpload);
 removeLogoButton.addEventListener('click', removeLogo);
 
-// Download button
+ 
 const downloadBtn = document.createElement('button');
 downloadBtn.textContent = 'Download Preview';
 downloadBtn.className = 'upload-button';
