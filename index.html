@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Umbrella Customizer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Umbrella Customizer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="theme-blue">
-    <div class="container"> 
-        <div class="umbrella-section">
-            <div class="umbrella-preview"> 
-                <img src="blue.png" alt="Blue Umbrella" class="umbrella-image" id="umbrella-blue" data-color="blue">
-                <img src="pink.png" alt="Pink Umbrella" class="umbrella-image hidden" id="umbrella-pink" data-color="pink">
-                <img src="yellow.png" alt="Yellow Umbrella" class="umbrella-image hidden" id="umbrella-yellow" data-color="yellow">
-                 
-                <div class="logo-overlay" id="logoOverlay">
-                    <img id="overlayLogoImage" alt="Logo">
-                </div>
-            </div>
-        </div>
- 
-        <div class="customization-panel">
-            <h1 class="panel-title">Custom Umbrella</h1>
- 
-            <div class="color-swatches">
-                <div class="color-swatch pink" data-color="pink" title="Pink"></div>
-                <div class="color-swatch blue active" data-color="blue" title="Blue"></div>
-                <div class="color-swatch yellow" data-color="yellow" title="Yellow"></div>
-            </div>
- 
-            <div class="upload-section">
-                <h2 class="upload-title">Customize your umbrella</h2>
-                <p class="upload-description">Upload a logo for an instant preview.</p>
-                <p class="upload-constraints">.png and .jpg files only. Max file size is 5MB.</p>
+  <div class="container"> 
+    <div class="umbrella-section">
+      <div class="umbrella-preview"> 
+        <img src="blue.png" alt="Blue Umbrella" class="umbrella-image" id="umbrella-blue" data-color="blue">
+        <img src="pink.png" alt="Pink Umbrella" class="umbrella-image hidden" id="umbrella-pink" data-color="pink">
+        <img src="yellow.png" alt="Yellow Umbrella" class="umbrella-image hidden" id="umbrella-yellow" data-color="yellow">
 
-                <div class="upload-button-wrapper">
-                    <button class="upload-button" id="uploadButton">
-                        <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/>
-                        </svg>
-                        Upload Logo
-                    </button>
-                    <input type="file" class="file-input" id="fileInput" accept=".png,.jpg,.jpeg">
-                </div>
- 
-                <div class="logo-preview-section">
-                    <div class="logo-preview-box" id="logoPreviewBox">
-                        <img id="logoPreviewImage" class="logo-preview-image" alt="Logo Preview">
-                        <br>
-                        <button class="remove-logo-button" id="removeLogoButton">Remove Logo</button>
-                    </div>
-                </div>
-            </div>
+        <div class="logo-overlay" id="logoOverlay">
+          <img id="overlayLogoImage" alt="Logo">
         </div>
+      </div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="customization-panel">
+      <h1 class="panel-title">Custom Umbrella</h1>
+
+      <div class="color-swatches">
+        <div class="color-swatch pink" data-color="pink" title="Pink"></div>
+        <div class="color-swatch blue active" data-color="blue" title="Blue"></div>
+        <div class="color-swatch yellow" data-color="yellow" title="Yellow"></div>
+      </div>
+
+      <div class="upload-section">
+        <h2 class="upload-title">Customize your umbrella</h2>
+        <p class="upload-description">Upload a logo for an instant preview.</p>
+        <p class="upload-constraints">.png and .jpg files only. Max file size is 5MB.</p>
+
+        <div class="upload-button-wrapper">
+          <button class="upload-button" id="uploadButton">
+            <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"/>
+            </svg>
+            Upload Logo
+          </button>
+          <input type="file" class="file-input" id="fileInput" accept=".png,.jpg,.jpeg">
+        </div>
+
+        <div class="logo-preview-section">
+          <div class="logo-preview-box" id="logoPreviewBox">
+            <img id="logoPreviewImage" class="logo-preview-image" alt="Logo Preview">
+            <br>
+            <button class="remove-logo-button" id="removeLogoButton">Remove Logo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
